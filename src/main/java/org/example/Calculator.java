@@ -27,7 +27,7 @@ public class Calculator {
 
     public double division(double num1, double num2){
         double result;
-        result = num2 / num1;
+        result = num1 / num2;
         return result;
     }
 }

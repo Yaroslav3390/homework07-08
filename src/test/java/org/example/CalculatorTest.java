@@ -22,6 +22,21 @@ class CalculatorTest {
     }
 
     @Test
+    void addNegative() {
+
+        Calculator calculator = new Calculator();
+        int result = calculator.add(20, 30);
+        assertNotEquals(40, result);
+    }
+    @Test
+    void subtractionNegative() {
+        Calculator calculator = new Calculator();
+        int result = calculator.subtraction(50, 20);
+        assertNotEquals(20, result);
+    }
+
+
+    @Test
      void multiplication() {
 
         Calculator calculator = new Calculator();
@@ -32,7 +47,8 @@ class CalculatorTest {
     @Test
     void division() {
         Calculator calculator = new Calculator();
-        double result = calculator.division(10.0, 2.0);
-        assertEquals(5.0, result);
+        double result = calculator.division(10, 5);
+        assertEquals(2, result);
     }
+
 }
