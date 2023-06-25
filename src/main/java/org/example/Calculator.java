@@ -25,7 +25,7 @@ public class Calculator {
         return result;
     }
 
-    public double division(double num1, double num2){
+    public double division(double num1, double num2, double delta) {
         double result;
         result = num1 / num2;
         return result;

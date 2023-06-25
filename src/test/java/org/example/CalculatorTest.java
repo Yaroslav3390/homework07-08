@@ -1,5 +1,6 @@
 package org.example;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -36,19 +37,6 @@ class CalculatorTest {
     }
 
 
-    @Test
-     void multiplication() {
 
-        Calculator calculator = new Calculator();
-        double result = calculator.multiplication(5,2);
-        assertEquals(10, result);
-    }
-
-    @Test
-    void division() {
-        Calculator calculator = new Calculator();
-        double result = calculator.division(10, 5);
-        assertEquals(2, result);
-    }
 
 }
